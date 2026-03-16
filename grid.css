@@ -1,0 +1,44 @@
+/*resert*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*class pai aonde conseguimos mexer no grid*/
+.container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    'header header header'
+    'aside article section'
+    'footer footer footer'
+    ;
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+aside{
+    grid-area: aside;
+    background-color: aqua;
+}
+
+article{
+    grid-area: article;
+    background-color: chartreuse;
+}
+
+section{
+    grid-area: section;
+    background-color: blue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: chocolate;
+}
+
+.item{
+height: 200px;
+}
